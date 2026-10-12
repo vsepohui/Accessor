@@ -6,23 +6,23 @@ Accessor - base class for accessor-pattern classes
 
 =head1 USAGE
 
-	my $h = new Hash(asd => 111);
-
-	warn $h->asd(); 	# get values
-	warn $h->asd('ad'); # set values
-
-	package Hash;
-
-	use base 'Accessor';
-
-	sub new {
-		my $class = shift;
-		return bless {@_}, $class;
-	}
+    my $obj = new Hash(myattr => 1);
+    
+    say $obj->myattr();   # get myattr, say 1
+    say $obj->myattr(0);  # set myattr to 0
+    
+    package Hash;
+    
+    use base 'Accessor';
+    
+    sub new {
+        my $class = shift;
+        return bless {@_}, $class;
+    }
 
 =head1 VERSION
 
-0.3
+0.4
 
 =head1 AUTHOR
 
