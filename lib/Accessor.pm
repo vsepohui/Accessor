@@ -26,7 +26,7 @@ Accessor - base class for accessor-pattern classes
 
 =head1 AUTHOR
 
-Developed by Ivan Trunaev.
+Developed by Ivan Trunaev
 
 Contacts <ivan@trunaev.ru>
 
