@@ -4,26 +4,39 @@ package Accessor;
 
 Accessor - base class for accessor-pattern classes
 
-=head2 USAGE
+=head1 USAGE
 
-my $h = new Hash(asd => 111);
+	my $h = new Hash(asd => 111);
 
-warn $h->asd(); 	# get values
-warn $h->asd('ad'); # set values
+	warn $h->asd(); 	# get values
+	warn $h->asd('ad'); # set values
 
-package Hash;
+	package Hash;
 
-use base 'Accessor';
+	use base 'Accessor';
 
-sub new {
-	my $class = shift;
-	return bless {@_}, $class;
-}
+	sub new {
+		my $class = shift;
+		return bless {@_}, $class;
+	}
+
+=head1 VERSION
+
+0.3
+
+=head1 AUTHOR
+
+All code writen by Ivan Trunaev.
+
+Contacts <ivan@trunaev.ru>
 
 =cut
 
+
 use strict;
 use warnings;
+
+our $VERSION = '0.3';
 
 our $AUTOLOAD;
 

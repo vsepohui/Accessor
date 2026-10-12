@@ -1,7 +1,0 @@
-MANIFEST
-README
-LICENSE
-Changes
-Makefile.PL
-lib/Accessor.pm
-t/001_load.t
