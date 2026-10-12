@@ -8,7 +8,7 @@ use warnings;
 my %WriteMakefileArgs = (
     NAME                => 'Accessor',
     VERSION_FROM        => 'lib/Accessor.pm',
-    AUTHOR              => 'Ivan Trunaev (kosherny@cpan.org)',
+    AUTHOR              => 'Ivan Trunaev',
     ABSTRACT            => 'Accessor - base class for accessor-pattern',
     INSTALLDIRS         => ($] < 5.011 ? 'perl' : 'site'),
     PREREQ_PM           => {
