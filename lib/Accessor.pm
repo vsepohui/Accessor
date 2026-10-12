@@ -42,12 +42,13 @@ our $AUTOLOAD;
 
 sub AUTOLOAD {
 	my $self = shift;
-	my $val  = shift;
-	
+
 	my $name = $AUTOLOAD;
 	return if $name =~ /^.*::[A-Z]+$/;
 	$name =~ s/^.*:://;   # strip fully-qualified portion
-	
+
+	return unless exists $self->{$name};
+
 	my $sub = sub {
 		my $self = shift;
 		if (scalar @_) {
@@ -56,13 +57,11 @@ sub AUTOLOAD {
 		}
 		return $self->{$name};
 	};
-	
-	return unless $self->{$name};
-	
+
 	no strict 'refs';
 	*{$AUTOLOAD} = $sub;
-	
-	return $val ? $sub->($self, $val) : $sub->($self);
+
+	return $sub->($self, @_);
 }
 
 1;
