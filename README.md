@@ -27,3 +27,7 @@ Accessor - base class for accessor-pattern classes
 Developed by Ivan Trunaev
 
 Contacts <ivan@trunaev.ru>
+
+# THANKS
+
+tobyink - Litte refactoring of core.
