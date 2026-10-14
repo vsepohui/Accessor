@@ -30,4 +30,4 @@ Contacts <ivan@trunaev.ru>
 
 # THANKS
 
-tobyink - Litte refactoring of core.
+tobyink - Little refactoring of core.

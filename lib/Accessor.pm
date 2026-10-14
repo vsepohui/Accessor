@@ -32,7 +32,7 @@ Contacts <ivan@trunaev.ru>
 
 =head1 THANKS
 
-tobyink - Litte refactoring of core.
+tobyink - Little refactoring of core.
 
 =cut
 
