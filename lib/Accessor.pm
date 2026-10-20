@@ -30,10 +30,6 @@ Developed by Ivan Trunaev
 
 Contacts <ivan@trunaev.ru>
 
-=head1 THANKS
-
-tobyink - Little refactoring of core, critical bugfix.
-
 =cut
 
 
