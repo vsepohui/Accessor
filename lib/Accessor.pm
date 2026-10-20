@@ -22,7 +22,7 @@ Accessor - base class for accessor-pattern classes
 
 =head1 VERSION
 
-0.4
+0.5
 
 =head1 AUTHOR
 
