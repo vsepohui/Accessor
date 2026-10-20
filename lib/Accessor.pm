@@ -51,7 +51,6 @@ sub AUTOLOAD {
 	return if $name =~ /^.*::[A-Z]+$/;
 	$name =~ s/^.*:://;   # strip fully-qualified portion
 
-	return unless exists $self->{$name};
 
 	my $sub = sub {
 		my $self = shift;

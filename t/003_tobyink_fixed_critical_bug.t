@@ -6,11 +6,11 @@ use Test::More tests => 2;
 
 BEGIN { use_ok( 'Accessor' ); }
 
-ok( sub { 
+ok( (sub { 
 	my $obj = new Hash;
-	$obj->attr(0);
-	return $obj->attr() == 0;
-}, 'Getting attr' );
+	$obj->attr(1);
+	return $obj->attr() == 1;
+})->(), 'Getting attr' );
 
 
 package Hash;

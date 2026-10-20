@@ -6,19 +6,19 @@ use Test::More tests => 4;
 
 BEGIN { use_ok( 'Accessor' ); }
 
-ok( sub { new Hash }, 'New object' );
+ok( (sub { new Hash })->(), 'New object' );
 
-ok( sub { 
+ok( (sub { 
 	my $obj = new Hash(attr1 => 'foo');
 	return $obj->attr1 eq 'foo';
-}, 'Getting attr' );
+})->(), 'Getting attr' );
 
 
-ok( sub { 
+ok( (sub { 
 	my $obj = new Hash(attr1 => 'foo');
 	$obj->attr1('bar');
 	return $obj->attr1 eq 'bar';
-}, 'Setting attr and checking' );
+})->(), 'Setting attr and checking' );
 
 
 
