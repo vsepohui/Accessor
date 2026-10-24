@@ -36,7 +36,7 @@ Contacts <ivan@trunaev.ru>
 use strict;
 use warnings;
 
-our $VERSION = '0.4';
+our $VERSION = '0.5';
 
 our $AUTOLOAD;
 
